@@ -5,6 +5,13 @@ Makes testing your GraphQL queries and mutations easier.
 
 Support for Symfony.
 
+![PHP Version](https://img.shields.io/packagist/php-v/vladdnepr/graphql-test)
+[![Latest Stable Version](http://poser.pugx.org/vladdnepr/graphql-test/v)](https://packagist.org/packages/vladdnepr/graphql-test)
+[![Latest Unstable Version](http://poser.pugx.org/vladdnepr/graphql-test/v/unstable)](https://packagist.org/packages/vladdnepr/graphql-test)
+
+[![Build Status](https://app.travis-ci.com/vladdnepr/graphql-test.svg?branch=master)](https://app.travis-ci.com/vladdnepr/graphql-test)
+[![Coverage Status](https://coveralls.io/repos/github/vladdnepr/graphql-test/badge.svg?branch=master)](https://coveralls.io/github/vladdnepr/graphql-test?branch=master)
+
 Documentation
 -------------
 
