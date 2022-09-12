@@ -1,4 +1,4 @@
 #!/usr/bin/env sh
 set -ev
 
-phpunit -c phpunit.xml.dist --coverage-clover build/logs/clover.xml
+XDEBUG_MODE=coverage phpunit -c phpunit.xml.dist --coverage-clover build/logs/clover.xml
