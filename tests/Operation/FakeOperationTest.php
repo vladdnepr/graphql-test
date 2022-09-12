@@ -1,6 +1,6 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Tests\Operation;
+namespace VladDnepr\GraphQLTest\Tests\Operation;
 
 use PHPUnit\Framework\TestCase;
 

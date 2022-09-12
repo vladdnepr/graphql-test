@@ -1,10 +1,10 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Operation;
+namespace VladDnepr\GraphQLTest\Operation;
 
-use KunicMarko\GraphQLTest\Formatter\FieldsFormatter;
-use KunicMarko\GraphQLTest\Formatter\FormatterInterface;
-use KunicMarko\GraphQLTest\Formatter\ParametersFormatter;
+use VladDnepr\GraphQLTest\Formatter\FieldsFormatter;
+use VladDnepr\GraphQLTest\Formatter\FormatterInterface;
+use VladDnepr\GraphQLTest\Formatter\ParametersFormatter;
 
 /**
  * @author Marko Kunic <kunicmarko20@gmail.com>

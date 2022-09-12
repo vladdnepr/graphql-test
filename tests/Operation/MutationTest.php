@@ -1,8 +1,8 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Tests\Operation;
+namespace VladDnepr\GraphQLTest\Tests\Operation;
 
-use KunicMarko\GraphQLTest\Operation\Mutation;
+use VladDnepr\GraphQLTest\Operation\Mutation;
 
 class MutationTest extends Operation
 {

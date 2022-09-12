@@ -1,20 +1,23 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Tests\Bridge\Symfony;
+namespace VladDnepr\GraphQLTest\Tests\Bridge\Symfony;
 
-use KunicMarko\GraphQLTest\Bridge\Symfony\TestCase as BaseTestCase;
-use Symfony\Bundle\FrameworkBundle\Client;
+use VladDnepr\GraphQLTest\Bridge\Symfony\TestCase as BaseTestCase;
+use Prophecy\PhpUnit\ProphecyTrait;
 use Prophecy\Argument;
+use Symfony\Bundle\FrameworkBundle\KernelBrowser;
 use Symfony\Component\BrowserKit\CookieJar;
 
 abstract class TestCase extends BaseTestCase
 {
-    private static $client;
-    protected static $cookieJar;
+    use ProphecyTrait;
 
-    public function setUp()
+    private static object $client;
+    protected static object $cookieJar;
+
+    public function setUp(): void
     {
-        $client = $this->prophesize(Client::class);
+        $client = $this->prophesize(KernelBrowser::class);
         static::$cookieJar = $this->prophesize(CookieJar::class);
 
         $client->getCookieJar()->willReturn(static::$cookieJar->reveal());
@@ -27,10 +30,12 @@ abstract class TestCase extends BaseTestCase
             Argument::type('array')
         )->shouldBeCalledTimes(1);
 
-        self::$client = $client->reveal();
+        /** @var KernelBrowser $clientMock */
+        $clientMock = $client->reveal();
+        self::$client = $clientMock;
     }
 
-    protected static function createClient(array $options = [], array $server = [])
+    protected static function createClient(array $options = [], array $server = []): KernelBrowser
     {
         return self::$client;
     }

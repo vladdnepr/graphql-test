@@ -1,10 +1,10 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Tests\Formatter;
+namespace VladDnepr\GraphQLTest\Tests\Formatter;
 
-use KunicMarko\GraphQLTest\Formatter\ParametersFormatter;
-use KunicMarko\GraphQLTest\Type\BooleanType;
-use KunicMarko\GraphQLTest\Type\EnumType;
+use VladDnepr\GraphQLTest\Formatter\ParametersFormatter;
+use VladDnepr\GraphQLTest\Type\BooleanType;
+use VladDnepr\GraphQLTest\Type\EnumType;
 use PHPUnit\Framework\TestCase;
 
 class ParametersFormatterTest extends TestCase

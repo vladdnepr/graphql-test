@@ -1,11 +1,11 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Tests\Operation;
+namespace VladDnepr\GraphQLTest\Tests\Operation;
 
-use KunicMarko\GraphQLTest\Operation\MutationInterface;
-use KunicMarko\GraphQLTest\Operation\QueryInterface;
-use KunicMarko\GraphQLTest\Type\BooleanType;
-use KunicMarko\GraphQLTest\Type\EnumType;
+use VladDnepr\GraphQLTest\Operation\MutationInterface;
+use VladDnepr\GraphQLTest\Operation\QueryInterface;
+use VladDnepr\GraphQLTest\Type\BooleanType;
+use VladDnepr\GraphQLTest\Type\EnumType;
 use PHPUnit\Framework\TestCase;
 
 abstract class Operation extends TestCase

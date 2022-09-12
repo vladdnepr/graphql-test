@@ -8,8 +8,9 @@
          convertWarningsToExceptions="true"
          processIsolation="false"
          stopOnFailure="false"
-         syntaxCheck="false"
          bootstrap="tests/bootstrap.php"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="https://schema.phpunit.de/9.3/phpunit.xsd"
 >
     <testsuites>
         <testsuite name="SonataAnnotationBundle Test Suite">
@@ -18,15 +19,22 @@
     </testsuites>
 
     <listeners>
-        <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener" />
+        <listener class="Symfony\Bridge\PhpUnit\SymfonyTestsListener">
+          <arguments>
+            <array>
+              <!-- set this option to 0 to disable the DebugClassLoader integration -->
+              <!-- https://github.com/sebastianbergmann/phpunit/issues/4002 -->
+              <element key="debug-class-loader"><integer>0</integer></element>
+            </array>
+          </arguments>
+        </listener>
     </listeners>
-
-    <filter>
-        <whitelist>
+    <coverage>
+        <include>
             <directory>./src/</directory>
-            <exclude>
-                <directory>./vendor/</directory>
-            </exclude>
-        </whitelist>
-    </filter>
+        </include>
+        <exclude>
+            <directory>./vendor/</directory>
+        </exclude>
+    </coverage>
 </phpunit>

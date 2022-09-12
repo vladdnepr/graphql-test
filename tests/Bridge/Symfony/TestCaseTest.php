@@ -1,9 +1,9 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Tests\Bridge\Symfony;
+namespace VladDnepr\GraphQLTest\Tests\Bridge\Symfony;
 
-use KunicMarko\GraphQLTest\Operation\Mutation;
-use KunicMarko\GraphQLTest\Operation\Query;
+use VladDnepr\GraphQLTest\Operation\Mutation;
+use VladDnepr\GraphQLTest\Operation\Query;
 use Symfony\Component\BrowserKit\Cookie;
 
 class TestCaseTest extends TestCase

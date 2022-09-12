@@ -1,13 +1,13 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Tests\Bridge;
+namespace VladDnepr\GraphQLTest\Tests\Bridge;
 
-use KunicMarko\GraphQLTest\Operation\Mutation;
-use KunicMarko\GraphQLTest\Operation\Query;
+use VladDnepr\GraphQLTest\Operation\Mutation;
+use VladDnepr\GraphQLTest\Operation\Query;
 
 class TestCaseTest extends TestCase
 {
-    public function setUp()
+    public function setUp(): void
     {
         self::$expectedHeaders = ['Content-Type' => 'application/json'];
     }

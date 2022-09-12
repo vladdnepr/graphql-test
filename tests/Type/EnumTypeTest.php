@@ -1,8 +1,8 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Tests\Type;
+namespace VladDnepr\GraphQLTest\Tests\Type;
 
-use KunicMarko\GraphQLTest\Type\EnumType;
+use VladDnepr\GraphQLTest\Type\EnumType;
 use PHPUnit\Framework\TestCase;
 
 class EnumTypeTest extends TestCase
