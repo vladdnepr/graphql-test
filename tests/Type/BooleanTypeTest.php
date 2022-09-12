@@ -1,8 +1,8 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Tests\Type;
+namespace VladDnepr\GraphQLTest\Tests\Type;
 
-use KunicMarko\GraphQLTest\Type\BooleanType;
+use VladDnepr\GraphQLTest\Type\BooleanType;
 use PHPUnit\Framework\TestCase;
 
 class BooleanTypeTest extends TestCase

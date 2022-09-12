@@ -1,6 +1,6 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Type;
+namespace VladDnepr\GraphQLTest\Type;
 
 /**
  * @author Marko Kunic <kunicmarko20@gmail.com>

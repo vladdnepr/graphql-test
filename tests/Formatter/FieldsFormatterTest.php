@@ -1,8 +1,8 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Tests\Formatter;
+namespace VladDnepr\GraphQLTest\Tests\Formatter;
 
-use KunicMarko\GraphQLTest\Formatter\FieldsFormatter;
+use VladDnepr\GraphQLTest\Formatter\FieldsFormatter;
 use PHPUnit\Framework\TestCase;
 
 class FieldsFormatterTest extends TestCase

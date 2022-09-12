@@ -3,14 +3,7 @@ GraphQL Test Case
 
 Makes testing your GraphQL queries and mutations easier.
 
-Support for Symfony, Lumen and Laravel.
-
-[![PHP Version](https://img.shields.io/badge/php-%5E7.1-blue.svg)](https://img.shields.io/badge/php-%5E7.1-blue.svg)
-[![Latest Stable Version](https://poser.pugx.org/kunicmarko/graphql-test/v/stable)](https://packagist.org/packages/kunicmarko/graphql-test)
-[![Latest Unstable Version](https://poser.pugx.org/kunicmarko/graphql-test/v/unstable)](https://packagist.org/packages/kunicmarko/graphql-test)
-
-[![Build Status](https://travis-ci.org/kunicmarko20/graphql-test.svg?branch=master)](https://travis-ci.org/kunicmarko20/graphql-test)
-[![Coverage Status](https://coveralls.io/repos/github/kunicmarko20/graphql-test/badge.svg?branch=master)](https://coveralls.io/github/kunicmarko20/graphql-test?branch=master)
+Support for Symfony.
 
 Documentation
 -------------
@@ -36,9 +29,7 @@ composer require --dev kunicmarko/graphql-test
 Depending on your framework, extend the correct `TestCase`:
 
 ```php
-use KunicMarko\GraphQLTest\Bridge\Symfony\TestCase;
-use KunicMarko\GraphQLTest\Bridge\Lumen\TestCase;
-use KunicMarko\GraphQLTest\Bridge\Laravel\TestCase;
+use VladDnepr\GraphQLTest\Bridge\Symfony\TestCase;
 ```
 
 > Everything you see in the next snippets is the same for all Test Cases.
@@ -53,7 +44,7 @@ public function mutation(MutationInterface $mutation, array $files = [], array $
 By default, endpoint is `/graphql`, you can overwrite this by changing variable in your tests:
 
 ```php
-use KunicMarko\GraphQLTest\Bridge\Symfony\TestCase;
+use VladDnepr\GraphQLTest\Bridge\Symfony\TestCase;
 
 class UserTest extends TestCase
 {
@@ -65,7 +56,7 @@ class UserTest extends TestCase
 There is a helper method that allows you to preset headers:
 
 ```php
-use KunicMarko\GraphQLTest\Bridge\Symfony\TestCase;
+use VladDnepr\GraphQLTest\Bridge\Symfony\TestCase;
 
 class SettingsTest extends TestCase
 {
@@ -84,8 +75,8 @@ class SettingsTest extends TestCase
 ### Query
 
 ```php
-use KunicMarko\GraphQLTest\Bridge\Symfony\TestCase;
-use KunicMarko\GraphQLTest\Operation\Query;
+use VladDnepr\GraphQLTest\Bridge\Symfony\TestCase;
+use VladDnepr\GraphQLTest\Operation\Query;
 
 class SettingsQueryTest extends TestCase
 {
@@ -116,7 +107,7 @@ class SettingsQueryTest extends TestCase
 }
 ```
 
-`KunicMarko\GraphQLTest\Operation\Query` construct accepts 3 arguments:
+`VladDnepr\GraphQLTest\Operation\Query` construct accepts 3 arguments:
 
 * name of query (mandatory)
 * parameters (optional)
@@ -125,8 +116,8 @@ class SettingsQueryTest extends TestCase
 ### Mutation
 
 ```php
-use KunicMarko\GraphQLTest\Bridge\Symfony\TestCase;
-use KunicMarko\GraphQLTest\Operation\Mutation;
+use VladDnepr\GraphQLTest\Bridge\Symfony\TestCase;
+use VladDnepr\GraphQLTest\Operation\Mutation;
 
 class SettingsMutationTest extends TestCase
 {
@@ -160,7 +151,7 @@ class SettingsMutationTest extends TestCase
 }
 ```
 
-`KunicMarko\GraphQLTest\Operation\Mutation` construct accepts 3 arguments:
+`VladDnepr\GraphQLTest\Operation\Mutation` construct accepts 3 arguments:
 
 * name of mutation (mandatory)
 * parameters (optional)
@@ -169,11 +160,11 @@ class SettingsMutationTest extends TestCase
 If you have a Enum, Boolean or Array as an argument you can pass it as following:
 
 ```php
-use KunicMarko\GraphQLTest\Bridge\Symfony\TestCase;
-use KunicMarko\GraphQLTest\Operation\Mutation;
-use KunicMarko\GraphQLTest\Type\EnumType;
-use KunicMarko\GraphQLTest\Type\BooleanType;
-use KunicMarko\GraphQLTest\Type\ArrayType;
+use VladDnepr\GraphQLTest\Bridge\Symfony\TestCase;
+use VladDnepr\GraphQLTest\Operation\Mutation;
+use VladDnepr\GraphQLTest\Type\EnumType;
+use VladDnepr\GraphQLTest\Type\BooleanType;
+use VladDnepr\GraphQLTest\Type\ArrayType;
 
 class UserMutationTest extends TestCase
 {
@@ -203,5 +194,5 @@ class UserMutationTest extends TestCase
 }
 ```
 
-Also, if you need a custom type you can always extend `KunicMarko\GraphQLTest\Type\TypeInterface`
+Also, if you need a custom type you can always extend `VladDnepr\GraphQLTest\Type\TypeInterface`
 and use your own Type instead.

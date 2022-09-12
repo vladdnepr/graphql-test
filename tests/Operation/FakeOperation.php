@@ -1,8 +1,8 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Tests\Operation;
+namespace VladDnepr\GraphQLTest\Tests\Operation;
 
-use KunicMarko\GraphQLTest\Operation\Operation as RealOperation;
+use VladDnepr\GraphQLTest\Operation\Operation as RealOperation;
 
 class FakeOperation extends RealOperation
 {

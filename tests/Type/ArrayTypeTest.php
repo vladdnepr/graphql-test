@@ -1,8 +1,8 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Tests\Type;
+namespace VladDnepr\GraphQLTest\Tests\Type;
 
-use KunicMarko\GraphQLTest\Type\ArrayType;
+use VladDnepr\GraphQLTest\Type\ArrayType;
 use PHPUnit\Framework\TestCase;
 
 class ArrayTypeTest extends TestCase

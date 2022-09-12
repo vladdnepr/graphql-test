@@ -1,8 +1,8 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Formatter;
+namespace VladDnepr\GraphQLTest\Formatter;
 
-use KunicMarko\GraphQLTest\Type\TypeInterface;
+use VladDnepr\GraphQLTest\Type\TypeInterface;
 use function is_array;
 use function is_string;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace KunicMarko\GraphQLTest\Tests\Operation;
+namespace VladDnepr\GraphQLTest\Tests\Operation;
 
-use KunicMarko\GraphQLTest\Operation\Query;
+use VladDnepr\GraphQLTest\Operation\Query;
 
 class QueryTest extends Operation
 {
